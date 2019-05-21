@@ -40,7 +40,10 @@ public class Pile extends CardStack{
 
 	public List<Card> getTop(int numberOfCards){
 		List<Card> temp = new ArrayList<Card>();
-		if (!cards_.empty()) {
+		if (numberOfCards > cards_.size()) {
+			return null;
+		}
+		if (!cards_.empty() ) {
 			for (int i = 0; i<numberOfCards; i++) {
 				temp.add(cards_.pop());
 			}
@@ -75,7 +78,10 @@ public class Pile extends CardStack{
 	}
 	
 	public void removeTop(int numberOfCards) {
-		if(!cards_.empty() || (cards_.size() > numberOfCards)) {
+		if (numberOfCards > cards_.size()) {
+			return;
+		}
+		if(!cards_.empty()) {
 			for(int i=0; i< numberOfCards; i++) {
 				cards_.pop();
 			}
@@ -90,5 +96,9 @@ public class Pile extends CardStack{
 			if(cards_.get(i).isFacedUp()) {numberOfFaceUpCards++;}
 		}
 		return numberOfFaceUpCards;
+	}
+	
+	public boolean empty() {
+		return cards_.empty();
 	}
 }
