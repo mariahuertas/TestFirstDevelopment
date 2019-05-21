@@ -58,7 +58,7 @@ public class PileTest {
 	}
 
 	@Test
-	public void GIVEN_numberOfCardsEquualsZero_WHEN_getTop_THEN_returnEmptyList() {
+	public void GIVEN_numberOfCardsEqualsZero_WHEN_getTop_THEN_returnEmptyList() {
 		int numberOfCards = 0;
 		Card card = new CardBuilder().number(Number.FIVE).suit(Suit.CLOVERS).build();
 		Card card2 = new CardBuilder().number(Number.FOUR).suit(Suit.HEARTS).build();
