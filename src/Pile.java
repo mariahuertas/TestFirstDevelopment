@@ -98,7 +98,8 @@ public class Pile extends CardStack{
 		return numberOfFaceUpCards;
 	}
 	
+	@Override
 	public boolean empty() {
-		return cards_.empty();
+		return super.empty();
 	}
 }

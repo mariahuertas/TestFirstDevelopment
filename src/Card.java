@@ -1,7 +1,7 @@
 
 public class Card {
-	Number number_;
-	Suit suit_;
+	private Number number_;
+	private Suit suit_;
 	private boolean facedUp;
 
 	Card(Suit suit, Number number){
