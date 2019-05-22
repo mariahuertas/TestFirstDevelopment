@@ -21,17 +21,12 @@ public class SuitTest {
 	}
 	
 	@Test
-	public void GIVEN__WHEN__THEN_() {
+	public void GIVEN_suit_WHEN_getAllTheInitials_THEN_getCorrectInitials() {
 		assertArrayEquals(Suit.initials(), new char[] {'h','d','c','p'});
 	}
 	
 	@Test
-	public void GIVEN__WHEN__THEN() {
-		assertNotEquals(Suit.initials(), new char[] {'h','c','d','p'});
-	}
-	
-	@Test
-	public void GIVEN__WHEN__THEN__() {
+	public void GIVEN_aSuit_WHEN_getSuitColor_THEN_getCorrectColor() {
 		assertEquals(Suit.HEARTS.getColor(), Color.RED );
 	}
 	

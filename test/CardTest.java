@@ -1,5 +1,3 @@
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -20,7 +18,7 @@ public class CardTest {
 	}
 	
 	@Test
-	public void Testflip() {
+	public void GIVEN_card_WHEN_tryToFlip_THEN_flip() {
 		Card card = new CardBuilder().build();
 		assertFalse(card.isFacedUp());
 		card.flip();
