@@ -20,7 +20,12 @@ public class EmptyGameBuilder {
 		}
 		return this;
 	}
+<<<<<<< HEAD
 	public Game build() {
+=======
+	
+	public Game game() {
+>>>>>>> a5e94153dd729aacb29618651f6499bebb850390
 		return this.game;
 	}
 }
